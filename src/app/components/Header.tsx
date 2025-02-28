@@ -146,14 +146,14 @@ const Header = () => {
         <div className="sm:flex hidden flex-row items-center">
           {links.map((link) => (
             <div className="mx-4" key={link.id}>
-              <Link
-                href={link.link}
-                className="inline-block text-[0] cursor-pointer"
-              >
-                <p className="text-primary font-phlu font-semibold text-lg hover:text-black duration-300">
-                  {link.title}
-                </p>
-              </Link>
+                <Link
+                    href={link.link}
+                    className="inline-block text-[0] cursor-pointer"
+                >
+                    <p className="text-primary font-phlu font-semibold text-lg hover:text-black duration-300">
+                    {link.title}
+                    </p>
+                </Link>
             </div>
           ))}
         </div>
