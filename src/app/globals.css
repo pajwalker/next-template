@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@theme {
+  --color-primary: #ae731e;
+  --footer-image: url(/icons/footer.svg);
+  --font-phlu: url(/fonts/km-docs.tff);
+}
+
+@layer base {
+  html {
+  }
+
+  h1 {
+    @apply text-3xl lg:text-[40px] font-phlu font-semibold;
+  }
+
+  h2 {
+    @apply text-2xl  font-phlu font-semibold;
+  }
+
+  h3 {
+    @apply text-xl  font-phlu font-medium;
+  }
+
+  h4 {
+    @apply text-xl  font-phlu;
+  }
+
+  p {
+    @apply leading-[21px] font-normal font-phlu;
+  }
+
+  a {
+    @apply cursor-pointer font-phlu;
+  }
+
+  button {
+    @apply cursor-pointer font-phlu;
+  }
+
+  .normal-spacing {
+    @apply lg:px-8 xl:px-12 px-5;
+  }
+}
