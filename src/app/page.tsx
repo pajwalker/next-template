@@ -16,7 +16,7 @@ export default function Home() {
     };
 
     fetchNews();
-  }, [fetchNewsService]);
+  }, []);
 
   return (
     <div className="flex flex-col items-start px-5 sm:px-10 md:px-20 mb-10">
